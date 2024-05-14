@@ -158,7 +158,7 @@ console.log("Всі буби:", diamonds);
 console.log('--------------------');
 
 // - всі трефи від 9 та більше
-const highTrefoils = deck.filter(card => card.cardSuit === 'clubs' && (parseInt(card.value) >= 9));
+const highTrefoils = deck.filter(card => card.cardSuit === 'clubs' && !(parseInt(card.value) < 9));
 console.log("Всі трефи від 9 та більше:", highTrefoils);
 console.log('--------------------');
 //
